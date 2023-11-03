@@ -4,7 +4,7 @@ import OpenAI from 'openai';
 import readline from 'readline'
 
 const openai = new OpenAI({
-  apiKey: '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', // defaults to process.env["OPENAI_API_KEY"]
+  apiKey: process.env.API_KEY, // defaults to process.env["OPENAI_API_KEY"]
 });
 
 const rl = readline.createInterface({
